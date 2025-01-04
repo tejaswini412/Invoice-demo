@@ -39,7 +39,7 @@
     height: 10px;
     width: 80%;
     margin: 0 auto;
-    background-color: #5d776c;
+    background-color: rgba(0, 0, 0, 0.873);
     }
     span{
     background-color:gold;
@@ -47,7 +47,7 @@
 }
 .title{
     text-align: center;
-    color: #5d776c;
+    color:darkolivegreen;
     margin: 30px 0 80px 0;
     font-size: 25px;
 }
@@ -56,6 +56,28 @@
     position: relative;
     height: 500px;
     }
+    .whole-body{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.body-key{
+    color: darkolivegreen;
+
+}
+.body-key:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 7px;
+}
+
+.body-value{
+    font-weight: bold;
+    width: 200px;
+}
+
 </style>
 <body>
     <div class="container">
@@ -67,9 +89,31 @@
        <div class="color-box"> </div>
         <div class="receipt-body">
             <h3 class="title"><span>&nbsp;&nbsp;Receipt&nbsp;&nbsp;</span></h3>
-
-
-        </div>
+            <div class="whole-body">
+                <div class="body-key"> Receipt No. :</div>
+                <div class="body-value"> &nbsp;&nbsp;1001</div>
+            </div>
+            <div class="whole-body">
+                <div class="body-key">Destination :</div>
+                <div class="body-value">&nbsp; Pune to Kokan</div>
+            </div>
+            <div class="whole-body">
+                <div class="body-key"> Payment Date :</div>
+                <div class="body-value">&nbsp;5 January 2025 </div>
+            </div>
+            <div class="whole-body">
+                <div class="body-key"> Total Amount :</div>
+                <div class="body-value">&nbsp;₹ 50,000/-</div>
+            </div>
+            <div class="whole-body">
+                <div class="body-key"> Payment Mode : </div>
+                <div class="body-value">&nbsp;UPI </div>
+            </div>
+            <div class="whole-body">
+                <div class="body-key"> Status :</div>
+                <div class="body-value">&nbsp;&nbsp; &nbsp;Paid </div>
+            </div>
+</div>
        
 </div>
 </body>
